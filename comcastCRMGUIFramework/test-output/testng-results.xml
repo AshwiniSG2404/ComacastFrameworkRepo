@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="7" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-04T11:05:37Z" name="Suite" finished-at="2025-01-04T11:08:29Z" duration-ms="172030">
+    <groups>
+      <group name="regressionTest">
+        <method signature="CreateContactTest.createContactWithOrg()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" name="createContactWithOrg" class="com.comcast.crm.contactTest.CreateContactTest"/>
+        <method signature="CreateContactTestngtest.CreateOrgwithIndustry()[pri:0, instance:com.comcast.crm.orgTest.CreateContactTestngtest@2c07545f]" name="CreateOrgwithIndustry" class="com.comcast.crm.orgTest.CreateContactTestngtest"/>
+      </group> <!-- regressionTest -->
+      <group name="smokeTest">
+        <method signature="CreateContactTest.createConTest()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" name="createConTest" class="com.comcast.crm.contactTest.CreateContactTest"/>
+        <method signature="CreateContactTestngtest.createOrgTest()[pri:0, instance:com.comcast.crm.orgTest.CreateContactTestngtest@2c07545f]" name="createOrgTest" class="com.comcast.crm.orgTest.CreateContactTestngtest"/>
+      </group> <!-- smokeTest -->
+    </groups>
+    <test started-at="2025-01-04T11:05:37Z" name="Test" finished-at="2025-01-04T11:08:29Z" duration-ms="172030">
+      <class name="com.comcast.crm.contactTest.CreateContactTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" started-at="2025-01-04T11:07:16Z" name="configBC" finished-at="2025-01-04T11:07:18Z" duration-ms="1362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" started-at="2025-01-04T11:07:18Z" name="configBM" finished-at="2025-01-04T11:07:24Z" duration-ms="6427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createConTest()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" started-at="2025-01-04T11:07:24Z" name="createConTest" finished-at="2025-01-04T11:07:34Z" duration-ms="10195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createConTest -->
+        <test-method is-config="true" signature="configAm()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" started-at="2025-01-04T11:07:34Z" name="configAm" finished-at="2025-01-04T11:07:36Z" duration-ms="1869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAm -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" started-at="2025-01-04T11:07:36Z" name="configBM" finished-at="2025-01-04T11:07:40Z" duration-ms="4109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContactWithOrg()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" started-at="2025-01-04T11:07:40Z" name="createContactWithOrg" finished-at="2025-01-04T11:08:05Z" duration-ms="25044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithOrg -->
+        <test-method is-config="true" signature="configAm()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" started-at="2025-01-04T11:08:05Z" name="configAm" finished-at="2025-01-04T11:08:07Z" duration-ms="1831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAm -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" started-at="2025-01-04T11:08:07Z" name="configBM" finished-at="2025-01-04T11:08:11Z" duration-ms="3823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContactwithDate()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" started-at="2025-01-04T11:08:11Z" name="createContactwithDate" finished-at="2025-01-04T11:08:25Z" duration-ms="14134" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2025-02-03] but found [2026-01-04]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2025-02-03] but found [2026-01-04]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.comcast.crm.contactTest.CreateContactTest.createContactwithDate(CreateContactTest.java:101)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactwithDate -->
+        <test-method is-config="true" signature="configAm()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" started-at="2025-01-04T11:08:25Z" name="configAm" finished-at="2025-01-04T11:08:28Z" duration-ms="3014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAm -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.contactTest.CreateContactTest@e57b96d]" started-at="2025-01-04T11:08:28Z" name="configAC" finished-at="2025-01-04T11:08:29Z" duration-ms="366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.comcast.crm.contactTest.CreateContactTest -->
+      <class name="com.comcast.crm.orgTest.CreateContactTestngtest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcast.crm.orgTest.CreateContactTestngtest@2c07545f]" started-at="2025-01-04T11:05:36Z" name="configBS" finished-at="2025-01-04T11:05:37Z" duration-ms="450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.crm.orgTest.CreateContactTestngtest@2c07545f]" started-at="2025-01-04T11:05:37Z" name="configBC" finished-at="2025-01-04T11:05:40Z" duration-ms="3721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.orgTest.CreateContactTestngtest@2c07545f]" started-at="2025-01-04T11:05:40Z" name="configBM" finished-at="2025-01-04T11:06:01Z" duration-ms="20349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateOrgwithIndustry()[pri:0, instance:com.comcast.crm.orgTest.CreateContactTestngtest@2c07545f]" started-at="2025-01-04T11:06:01Z" name="CreateOrgwithIndustry" finished-at="2025-01-04T11:06:39Z" duration-ms="38488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrgwithIndustry -->
+        <test-method is-config="true" signature="configAm()[pri:0, instance:com.comcast.crm.orgTest.CreateContactTestngtest@2c07545f]" started-at="2025-01-04T11:06:39Z" name="configAm" finished-at="2025-01-04T11:06:42Z" duration-ms="3157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAm -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.orgTest.CreateContactTestngtest@2c07545f]" started-at="2025-01-04T11:06:42Z" name="configBM" finished-at="2025-01-04T11:06:46Z" duration-ms="3240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrgTest()[pri:0, instance:com.comcast.crm.orgTest.CreateContactTestngtest@2c07545f]" started-at="2025-01-04T11:06:46Z" name="createOrgTest" finished-at="2025-01-04T11:06:56Z" duration-ms="10481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgTest -->
+        <test-method is-config="true" signature="configAm()[pri:0, instance:com.comcast.crm.orgTest.CreateContactTestngtest@2c07545f]" started-at="2025-01-04T11:06:56Z" name="configAm" finished-at="2025-01-04T11:07:16Z" duration-ms="20165" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1fc79d0175491ae33cb78de6bb000ff2, findElement {using=link text, value=Sign Out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\QSP-AS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60633/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc79d0175491ae33cb78de6bb000ff2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Sign Out"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1fc79d0175491ae33cb78de6bb000ff2, findElement {using=link text, value=Sign Out}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\QSP-AS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60633}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60633/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fc79d0175491ae33cb78de6bb000ff2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at com.comcast.crm.ObjectRepositoryUtility.HomePage.Logout(HomePage.java:60)
+at com.comcast.crm.baseClassUtility.BaseClass.configAm(BaseClass.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAm -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.orgTest.CreateContactTestngtest@2c07545f]" started-at="2025-01-04T11:07:16Z" name="configAC" finished-at="2025-01-04T11:07:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.crm.orgTest.CreateContactTestngtest@2c07545f]" started-at="2025-01-04T11:08:29Z" name="configAS" finished-at="2025-01-04T11:08:29Z" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- com.comcast.crm.orgTest.CreateContactTestngtest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
