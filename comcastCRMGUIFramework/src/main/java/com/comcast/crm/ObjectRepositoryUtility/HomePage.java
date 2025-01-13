@@ -22,6 +22,8 @@ WebDriver driver;
 	private WebElement moreLink;
 	@FindBy(linkText="Campaigns")
 	private WebElement compaignLink;
+	@FindBy(linkText="Products")
+	private WebElement productLink;
 	@FindBy(xpath="//img[@src='themes/softed/images/user.PNG']")
 	private WebElement adminImg;
 	@FindBy(linkText="Sign Out")
@@ -46,6 +48,10 @@ WebDriver driver;
 	}
 	public WebElement getSignOutLink() {
 		return SignOutLink;
+	}
+	
+	public WebElement getProductLink() {
+		return productLink;
 	}
 	public void navigateToCompaign()
 	{
