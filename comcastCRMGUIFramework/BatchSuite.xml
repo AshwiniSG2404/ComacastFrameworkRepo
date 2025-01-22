@@ -5,7 +5,6 @@
     <classes>
      <class name="com.comcast.crm.orgTest.CreateContactTestngtest"/>
       <class name="com.comcast.crm.contactTest.CreateContactTest"/>
-     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
